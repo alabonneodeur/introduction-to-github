@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À la Bonne Odeur</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #f4e1d2;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1504198453319-5ce911bafcde');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #f4e1d2;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    form {
+      padding: 20px;
+      text-align: center;
+    }
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #d9a57e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>À la Bonne Odeur</h1>
+    <nav>
+      <a href="#produits">Nos Bougies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+    Des bougies qui éveillent les sens
+  </div>
+  <section id="produits" class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1519160558534-579f5106ac31" alt="Bougie 1" />
+      <h3>Lavande & Vanille</h3>
+      <p>12€</p>
+      <button>Ajouter au panier</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1607082349566-187361f28d0c" alt="Bougie 2" />
+      <h3>Bois & Cèdre</h3>
+      <p>15€</p>
+      <button>Ajouter au panier</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f5d5" alt="Bougie 3" />
+      <h3>Fleur d'Oranger</h3>
+      <p>14€</p>
+      <button>Ajouter au panier</button>
+    </div>
+  </section>
+  <section id="contact">
+    <form>
+      <h2>Contactez-nous</h2>
+      <input type="text" placeholder="Votre nom" required /><br />
+      <input type="email" placeholder="Votre email" required /><br />
+      <textarea rows="4" placeholder="Votre message"></textarea><br />
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 À la Bonne Odeur - Tous droits réservés
+  </footer>
+</body>
+</html>
+
